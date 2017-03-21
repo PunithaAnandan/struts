@@ -11,12 +11,13 @@
 
 <c:import url="head.jsp" />
 
-
 <div id="contentarea">
-    <h2>Struts 2 (struts2 = webwork + struts1)</h2>
-    Its an open-source framework for developing the web applications in Java EE. </br>
-    The goal of struts is to cleanly separate Business logic from User Interface and Program flow using MVC(Model View Controller) design pattern.
-    <br>
+    <a href="http://www.javatpoint.com/steps-to-create-struts-2-application-example"><b><U>Reference1</U></b></a>
+    <br><br>
+    <a href="https://manikandanmv.wordpress.com/2010/11/18/struts-basics/"><b><U>Reference2</U></b></a>
+    <br><br>
+    <a href="http://www.tutorialspoint.com/struts_2/"><b><U>Reference3</U></b></a>
+    <br><br>
 </div>
 </div>
 <c:import url="footer.jsp" />

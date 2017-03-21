@@ -5,31 +5,36 @@
   Time: 5:03 PM
   To change this template use File | Settings | File Templates.
 --%>
-<!DOCTYPE html>
-
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<c:import url="header.jsp" />
+
 
 <c:import url="head.jsp" />
 
-<br>
-
-<c:import url="header.jsp" />
 
 <div id="contentarea">
-    <h2>Struts component classes</h2>
-    <strong>ActionServlet</strong></br>
-    <p>ActionServlet is a backbone of all struts applications. <br>This class plays the role of <strong>Controller</strong> and is responsible for handling all requests.</br> All incoming requests are mapped to the central controller in the deployment descriptor.
+    Struts 2 provides supports for the following features:
     <br><br>
-    <strong>Action</strong></br>
-    <p>Action is a part of the <strong>Model</strong> and is a wrapper around the business logic.Purpose of this class is to translate the Http servlet request to the business logic that should be executed to process the request. It can also perform Authorization, Logging before invoking business operation.
+    <strong>1) Configurable MVC components:</strong>
+    In struts 2 framework, we provide all the components (view components and action) information in struts.xml file. If we need to change any information, we can simply change it in the xml file.
     <br><br>
-    execute() is the important method in this class. This has been called by the controller when a request is received from the client, process the request and return to an appropriate action forward
+    <strong>2) POJO based actions:</strong>
+    In struts 2, action class is POJO (Plain Old Java Object) i.e. a simple java class. Here, you are not forced to implement any interface or inherit any class
     <br><br>
-    <strong>ActionForm</strong></br>
-    <p>ActionForm is a Java bean, maintains the session state for web applications. It has setters/getters method used to capture input data from an HTML form<strong>(View)</strong> and transfer it to the Action class. It also used to transfer data from the Action class back to the HTML form. It also a place to put data conversion and error handling logics.
+    <strong>3) AJAX support:</strong>
+    Struts 2 provides support to ajax technology. It is used to make asynchronous request i.e. it doesn't block the user. It sends only required field data to the server side not all. So it makes the performance fast.
+    <br><br>
+    <strong>4) Integration Support:</strong>
+    We can simply integrate the struts 2 application with hibernate, spring, tiles etc. frameworks.
+    <br><br>
+    <strong>5) Various Result Types:</strong>
+    We can use JSP, freemarker, velocity etc. technologies as the result in struts 2.
+    <br><br>
+    <strong>6) Various Tag support:</strong>
+    Struts 2 provides various types of tags such as UI tags, Data tags, control tags etc to ease the development of struts 2 application.
+    <br><br>
+    <strong>7) Theme and Template support:</strong>
+    Struts 2 provides three types of theme support: xhtml, simple and css_xhtml. The xhtml is default theme of struts 2. Themes and templates can be used for common look and feel.
 </div>
-
+</div>
 <c:import url="footer.jsp" />
-
-</body>
-</html>
